@@ -1,7 +1,6 @@
 #!/bin/bash
-#return unused ip address
-#only supports <= /24 networks
-#only supports single network in bind zone file
+#./script <forwardzonefile>
+#return next unused ip address, only supports <= /24 networks, only supports single network in bind zone file
 function findip () {
         startip="10"
         endip="254"

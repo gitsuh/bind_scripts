@@ -1,8 +1,8 @@
 #!/bin/bash
 if [[ $# -eq 0 ]] ; then
         echo 'Must provide arguments.'
-        echo './add_a_ptr_record.sh <forwardzonefile> <reversezonefile> <ipaddress> <FQDN>'
-        echo 'Example: ./add_a_ptr_record.sh /etc/named/db.my.domain /etc/named/db.192.168.1 192.168.1.200 myserver.my.domain'
+        echo '<forwardzonefile> <reversezonefile> <ipaddress> <FQDN>'
+        echo 'Example: ./script.sh /etc/named/db.my.domain /etc/named/db.192.168.1 192.168.1.200 myserver.my.domain'
         exit 1
 fi
 reversezonefile=$1
